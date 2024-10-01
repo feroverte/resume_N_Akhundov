@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import codepic from "../assets/Code.png";
 import skillspic from "../assets/Skills.png";
 import servicespic from "../assets/Services.png";
@@ -31,8 +31,10 @@ function Navbar({ sectionsRef }) {
         isSticky ? "fixed" : "relative"
       } w-full z-10`}
     >
-      <div className="container py-4 flex flex-col items-center">
-        <div className="flex space-x-8 justify-center">
+      <div className="container py-4 mx-auto flex flex-col items-center">
+        <div className="flex space-x-8 justify-center w-full max-w-6xl">
+          {" "}
+          {/* Centering items */}
           {[
             "Home",
             "About",
